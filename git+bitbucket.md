@@ -18,7 +18,6 @@ mkdir /path/to/your/project
 cd /path/to/your/project
 git init
 git remote add origin ssh://git@bitbucket.org/zzbased/documents.git
-
 echo "# This is my README" >> README.md
 git add README.md
 git commit -m "First commit. Adding a README."

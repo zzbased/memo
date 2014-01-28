@@ -33,7 +33,7 @@ cd %CUDA_SDK_PATH%\Bin\win64\Release
 
 执行deviceQuery.exe 和 bandwithTest.exe
 
-![Image](images/QQ截图20140128135238.jpg)
+![Image](images/QQ截图20140128135238.png)
 
 ok, cuda安装成功
 
@@ -165,4 +165,4 @@ The program just computes the exp() of a bunch of random numbers. Note that we u
 
    logistic_sgd.py
    执行结果：
-  ![Image](images/QQ截图20140128152208.jpg)
+  ![Image](images/QQ截图20140128152208.png)

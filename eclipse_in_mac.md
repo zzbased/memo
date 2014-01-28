@@ -1,4 +1,4 @@
-mac电脑上eclipse设置
+## mac电脑上eclipse设置 ##
 
 1. 首先是下载最新的jdk. 下载安装后，并设置环境变量：
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/"

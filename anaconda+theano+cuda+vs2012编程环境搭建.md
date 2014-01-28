@@ -10,8 +10,11 @@
   - [theano github地址](https://github.com/Theano/Theano)
   - [theano 官方首页](http://deeplearning.net/software/theano/)
   - [theano 学习指南翻译](http://www.cnblogs.com/xueliangliu/archive/2013/04/03/2997437.html)
+  
 #### 1.3. cuda: ####
+
 nvidia gpu编程库
+
 
 ### 二 安装流程 ###
 ####2.1	我的安装环境  

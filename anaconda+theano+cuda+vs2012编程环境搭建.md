@@ -2,18 +2,23 @@
 
 ### 一 基本概念介绍 ###
 
-1. anaconda： 一个python科学计算发行版，具体可以参考下面的网页：
+#### 1.1. anaconda： ####
+  一个python科学计算发行版，具体可以参考下面的网页：
   [目前比较流行的python科学计算发行包](http://blog.csdn.net/rumswell/article/details/8927603)。其中比较了python(x,y),winpython, anaconda, canopy, sage。
-2. theana：深度学习python包。
+#### 1.2. theana：####
+深度学习python包。
   - [theano github地址](https://github.com/Theano/Theano)
   - [theano 官方首页](http://deeplearning.net/software/theano/)
   - [theano 学习指南翻译](http://www.cnblogs.com/xueliangliu/archive/2013/04/03/2997437.html)
-3. cuda. nvidia gpu编程库
+#### 1.3. cuda: ####
+nvidia gpu编程库
 
 ### 二 安装流程 ###
-1.	我的安装环境为: windows7 64bit. gpu是geforce gtx 660.
+####2.1	我的安装环境  
+windows7 64bit. gpu是geforce gtx 660.
 
-2.	先安装cuda. 目前cuda的最新版是5.5，直接到官方网站下站即可。
+#### 2.2 cuda安装 ####
+先安装cuda. 目前cuda的最新版是5.5，直接到官方网站下站即可。
   - [cuda 下载地址](https://developer.nvidia.com/cuda-downloads)
   - [手把手教你cuda5.5与VS2010的编译环境搭建](http://blog.csdn.net/yeyang911/article/details/17450963)  
  
@@ -37,8 +42,8 @@ cd %CUDA_SDK_PATH%\Bin\win64\Release
 
 ok, cuda安装成功
 
-
-3.	再接着按照上面教程所说，继续安装vs2010.
+#### 2.3 cuda+vs ###
+再接着按照上面教程所说，继续安装vs2010.
 cuda官网上有一篇安装教程：
 [cuda+vs官网安装](http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-microsoft-windows/)
 
@@ -71,16 +76,19 @@ vs2012安装完成后，打开bandwidthTest，还有一点错误：
 这样总算可以完整编译bandwidthTest工程，x64和win32平台都是ok的。
 
 
-4.	搞好cuda的环境后，再来安装anaconda。
+#### 2.4 anaconda ####
+搞好cuda的环境后，再来安装anaconda。
    anaconda的安装相对简单。
 
-5.	安装完anaconda后，再按照下面文章所述安装theano.
+#### 2.5 theana ####
+安装完anaconda后，再按照下面文章所述安装theano.
   [64位WIN7上成功安装theano,并运行了g++, GPU](http://blog.csdn.net/yeyang911/article/details/16357133)
   [官网上利用anaconda安装theano的介绍](http://deeplearning.net/software/theano/install.html#windows-anaconda)
 安装完theano后，还要设置环境变量：PYTHONPATH = D:\Anaconda\Lib\site-packages\theano
 PYTHONPATH的含义和sys.path一样，就是python解释器寻找模块的路径。
 
-6.	在使用theano之前，还需要配置theano。
+
+在使用theano之前，还需要配置theano。
    在home目录下编辑.theanorc.txt
 
     [blas]
@@ -97,7 +105,7 @@ PYTHONPATH的含义和sys.path一样，就是python解释器寻找模块的路�
     device = gpu
 
 ### 三. 使用theano ###
-1. theano using the GPU 
+#### 3.1 theano using the GPU ####
 [官方using the gpu文档](http://deeplearning.net/software/theano/tutorial/using_gpu.html#using-gpu)
 
 下面是一个测试程序：
@@ -159,8 +167,11 @@ The program just computes the exp() of a bunch of random numbers. Note that we u
 
 用上面这个程序，GPU执行，只需要0.01s。
 
-2. 下载DeepLearningTutorials
+#### 3.2 DeepLearningTutorials ####
+   下载DeepLearningTutorials
+
    [DeepLearningTutorials](https://github.com/lisa-lab/DeepLearningTutorials)
+
    仔细研读里面的文件，开始学习deep learning！
 
    logistic_sgd.py
